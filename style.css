@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "arial", 'sans-serif';
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 48px;
+}
+
+.links a{
+    padding-right: 15px;
+    text-decoration: none;
+    line-height: 24px;
+    color: rgba(0,0,0,.87)
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.latest{
+    display: flex;
+}
+
+.menu_img{
+    display: flex;
+    width: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
+    align-items: center;
+}
+
+.menu_img svg{
+    color: #5f6368;
+    opacity: 1;
+    fill: currentColor;
+}
+
+.menu_img:hover{
+    border-radius: 50%;
+    background-color: #c9c9c9;
+}
+
+.latest a{
+    font-family: 'Google Sans', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    line-height: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 9px 23px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    font-weight: 600px;
+    text-decoration: none;
+    background-color: #1a73e8;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.latest a:hover{
+     box-shadow: 0px 0px 3px #000;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    
+}
+
+.logo{
+    max-height: 92px;
+    position: relative;
+    margin-top: auto;
+    height: 100%;
+    width: 272px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.pesquisa{
+    padding: 25px;
+    
+}
+
+.barra{
+    border: 1px solid #dfe1e5;
+    display: flex;
+    background-color:#fff;
+    border-radius:24px;
+    width: 570px;
+    height: 40px;
+    position: relative;
+    margin: auto;
+    padding: 5px 8px 0 14px;
+}
+
+.trio{
+    display: flex;
+    align-items: center;
+}
+
+.lupa{
+    display: flex;
+    align-items: center;
+    width: 33px;
+    padding-right: 13px;
+}
+.svg{
+    margin: auto;
+}
+
+.barra svg{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    color: #9aa0a6;
+}
+
+#barrapesquisa{
+    border: none;
+    background-color: transparent;
+    width: auto;
+    display: flex;
+    flex: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    font-size: 16px;
+}
+
+.fist{
+    padding: 0px 8px;
+}
+
+.tecla{
+    background-image: url('./imagens/tia.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+
+span{
+    width: 25px;
+    height: 25px;
+}
+
+span img{
+    width: 25px;
+    height: 25px;
+}
+
+.ps2{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    align-items: center;
+    height: 58px;
+}
+
+button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+} 
+
+button:hover {
+    border: 1px solid #DEDFE0;
+    box-shadow: 1px 1px 2px #DEDFE0;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_country{
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+.footer_menu{
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.pri ul{
+    display: flex;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    
+}
+
+.footer_menu li{
+    list-style: none;
+}
+
+.footer_menu a{
+    font-size: 14px;
+    padding: 14px;
+    text-decoration: none;  
+    color: #70757a;
+}
+
+.footer_menu a:hover{
+    text-decoration: underline;
+}
+
+.sec{
+    flex: 1;
+}
+
+.sec ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+
+}
+
+@media (max-width: 860px) {
+
+    .pri ul{
+        padding: 0;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 800px){
+    .footer_menu{
+        flex-direction: column;
+    }
+
+    .sec ul{
+        justify-content: flex-start;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 425px){
+
+    .menu{ 
+        margin: auto;
+    }
+
+    .logo{
+        margin: auto;
+    }
+
+    .barra{
+        width: auto;
+    }
+
+    .footer_menu a{
+        font-size: 13px;
+    }
+
+}
